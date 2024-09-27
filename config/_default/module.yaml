@@ -7,6 +7,7 @@
 imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+  - path: github.com/dhia-e-rzig/wowchemy-widget-social-media-widget-website
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
@@ -19,6 +20,7 @@ mounts:
   - source: hugo-blox/blox
     target: assets/dist/community/blox/
     includeFiles: '**.css'
+  - source: ./
   - source: layouts
     target: layouts
   - source: assets
